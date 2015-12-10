@@ -10,7 +10,7 @@ public class Solution
 {
     public static void main(String[] args)
     {
-        String date = "MAY 1 2012";//напишите тут ваш код
+        String date = "MAY 1 2012";
         System.out.printf(date);
     }
 }
