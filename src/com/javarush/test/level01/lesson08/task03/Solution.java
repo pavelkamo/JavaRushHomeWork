@@ -7,7 +7,11 @@ public class Solution
 {
     public static void main(String[] args)
     {
-        //напишите тут ваш код
+        String str = "Хочешь - решай задачи, не хочешь - решай нехотя";
+        print4Times(str);
+        print4Times(str);
+        print4Times(str);
+        print4Times(str);//напишите тут ваш код
     }
 
     public static void print4Times(String s)
