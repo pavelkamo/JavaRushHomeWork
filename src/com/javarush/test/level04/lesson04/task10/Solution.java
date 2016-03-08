@@ -15,7 +15,6 @@ public class Solution
 {
     public static void main(String[] args) throws Exception {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-
         Integer[] array = new Integer[3];
         array[0] = Integer.parseInt(reader.readLine());
         array[1] = Integer.parseInt(reader.readLine());
