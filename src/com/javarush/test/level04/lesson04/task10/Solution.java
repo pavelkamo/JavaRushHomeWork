@@ -24,7 +24,6 @@ public class Solution
         pointNumbers[0] = false;
         pointNumbers[1] = false;
         pointNumbers[2] = false;
-
         for (int i = 0; i < array.length; i++) {
             for (int k = 0; k < array.length; k++) {
                 if (i == k) {
