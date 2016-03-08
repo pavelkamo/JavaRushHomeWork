@@ -13,21 +13,32 @@ import java.io.*;
 
 public class Solution
 {
-    public static void main(String[] args) throws Exception
-    {
+    public static void main(String[] args) throws Exception {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        int number1 = Integer.parseInt(reader.readLine());
-        int number2 = Integer.parseInt(reader.readLine());
-        int number3 = Integer.parseInt(reader.readLine());
-//        System.out.println(number1 + " " + number2 + " " + number3);
-        if (number1 == number2 && number1 != number3){
-            System.out.print(number1 + " " + number2);
-        } else if (number1 == number3 && number1 != number2){
-            System.out.print(number1 + " " + number3);
-        } else if (number2 == number3 && number1 != number3){
-            System.out.print(number2 + " " + number3);
-        } else if (number1 == number2 && number1 == number3){
-            System.out.print(number1 + " " + number2 + " " + number3);
+
+        Integer[] array = new Integer[3];
+        array[0] = Integer.parseInt(reader.readLine());
+        array[1] = Integer.parseInt(reader.readLine());
+        array[2] = Integer.parseInt(reader.readLine());
+        boolean[] pointNumbers = new boolean[3];
+        pointNumbers[0] = false;
+        pointNumbers[1] = false;
+        pointNumbers[2] = false;
+
+        for (int i = 0; i < array.length; i++) {
+            for (int k = 0; k < array.length; k++) {
+                if (i == k) {
+                    continue;
+                } else if (array[i] == array[k]) {
+                    pointNumbers[i] = true;
+                }
+            }
         }
-     }
+        //Show ecual numbers
+        for (int i = 0; i < array.length; i++){
+            if (pointNumbers[i] == true){
+                System.out.print(array[i]);
+            }
+        }
+    }
 }
