@@ -12,10 +12,10 @@ public class Solution
 {
     public static void main(String[] args) throws Exception
     {
-        for (int i = 0; i < 9; i++){
-            System.out.print(8);//напишите тут ваш код
+        for(int i = 0; i < 310; i++){
+            System.out.print(8 + " ");//напишите тут ваш код
         }
-        for (int i = 0; i <= 10; i++){
+        for(int i = 0; i < 10; i++){
             System.out.println(8);
         }
     }
