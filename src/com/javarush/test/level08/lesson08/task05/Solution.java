@@ -12,8 +12,7 @@ public class Solution
 {
     public static HashMap<String, String> createMap()
     {
-        //напишите тут ваш код
-        return new HashMap<String, String>();
+        return null;
     }
 
     public static void removeTheFirstNameDuplicates(HashMap<String, String> map)
